@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação Empatia - UNIFENAS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+      }
+    }
+  </script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj314cMCHuEj-I0PKk5HB6_pVyDZk9NCpXW2r-cbTlHdNoqIQXf6vCovMOnlwfm_bBpi64xb5jl3IbHMbDpaokWzrxNbBQLwJJzHcrZsUGGfLQfh6ZfIx3JZy634h7yUQH4FbL0sHzR6N0/s1920/unifenas.png"
+        alt="Logo UNIFENAS" style="max-width: 70%; height: auto; margin-bottom: 1rem;">
+      <h1>Avaliação Empatia 𝚿 Curso de Psicologia</h1>
+      <h2>Bem-vindo(a)!</h2>
+      <img src="https://static.dinamize.com.br/dinamizeszmsdg3x/uploads/2024/06/MAPADEMPATIA-02.png"
+        alt="Mapa de Empatia Ilustração">
+      <p>Este questionário rápido ajudará a avaliar seu nível de empatia. Indique a frequência com que você age ou se sente tal como descrito no
+        item. Se uma dessas situações nunca lhe ocorreu, responda como se tivesse ocorrido, considerando o seu possível comportamento.</p>
+      <button type="button" onclick="startQuiz()">Iniciar Questionário</button>
+    </div>
+
+    <form id="empathy-form">
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj314cMCHuEj-I0PKk5HB6_pVyDZk9NCpXW2r-cbTlHdNoqIQXf6vCovMOnlwfm_bBpi64xb5jl3IbHMbDpaokWzrxNbBQLwJJzHcrZsUGGfLQfh6ZfIx3JZy634h7yUQH4FbL0sHzR6N0/s1920/unifenas.png"
+        alt="Logo UNIFENAS" style="max-width: 70%; height: auto; margin-bottom: 1rem;">
+      <h1>Avaliação Empatia 𝚿 Curso de Psicologia</h1>
+      <h2>Responda de acordo com sua experiência</h2>
+      <!-- Questions 1-24 -->
+      <!-- Questions will be loaded here -->
+      <button type="button" onclick="calculateScore()">Calcular Pontuação</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+  <script>
+    // Code moved to script.js, to avoid file size limitations.
+    // function restartQuiz() {
+    //   location.reload();
+    // }
+  </script>
+</body>
+
+</html>
